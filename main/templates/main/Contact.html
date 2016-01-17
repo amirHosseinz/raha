@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load staticfiles %}
+    <meta charset="utf-8"/>
+    <title>Principato Italian Cuisine</title>
+    <link href="{% static 'main/css/style.css' %}" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+
+    </style>
+
+    <!--[if IE]>
+    <script>
+  document.createElement('header');
+  document.createElement('footer');
+  document.createElement('section');
+  document.createElement('nav');
+
+    </script>
+    <![endif]-->
+
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+    <header>
+
+
+        <div id="logo"><img src="{% static 'main/images/logo.png' %}" alt="your logo here" border="0" class="imagedropshadow"/></div>
+
+
+                <h2 align="center">
+            کاردونی
+        </h2>
+
+        <div id="login" align="right">
+            <form method="post" action="..." align="right">
+
+                <input type="submit" value="جستجو"/>
+
+                <input type="text" name="username" size="15"/>
+
+
+            </form>
+            <nav>
+                <br/>
+
+                <div class="navbutton"><a href="/main">خانه</a></div>
+                <div class="navbutton"><a href="sign_up">ثبت نام</a></div>
+                <div class="navbutton"><a href="#">درباره ما</a></div>
+                <div class="navbutton"><a href="contact">تماس با ما</a></div>
+            </nav>
+
+            <br/><br/><br/>
+            <div class="photo"></div>
+
+        </div>
+
+
+        <br/><br/><br/>
+
+        <div id="login" align="right" dir="rtl">
+            <form method="post" action="http://YOUR_DOMAIN_HERE/login/login.php">
+                <br/>نام: <input type="text" name="username" size="15"/><br/>
+                <br/>رایانامه: <input type="text" name="username" size="20"/><br/>
+
+                <br/>پیام: <input type="text" name="username"
+                                     style="width:213px;height:113px;line-height:113px"/><br/>
+                <br/>
+
+                <div class="readbutton" align="center"><a href="#">ارسال</a></div>
+            </form>
+
+
+        </div>
+
+
+    </header>
+</div>
+<!-- Free template distributed by http://freehtml5templates.com -->
+
+
+</body>
+
+
+</html>

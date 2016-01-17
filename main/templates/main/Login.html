@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load staticfiles %}
+    <meta charset="utf-8"/>
+    <title>Principato Italian Cuisine</title>
+    <link href="{% static 'main/css/style.css' %}" rel="stylesheet" type="text/css"/>
+    <style type="text/css"></style>
+
+
+    <!--[if IE]>
+    <script>
+  document.createElement('header');
+  document.createElement('footer');
+  document.createElement('section');
+  document.createElement('nav');
+
+
+    </script>
+    <![endif]-->
+
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div class="container">
+    <header>
+        <div id="logo"><img src="{% static 'main/images/logo.png' %}" alt="your logo here" border="0"
+                            class="imagedropshadow"/></div>
+        <h2 align="center">
+            Tasket
+        </h2>
+        <br/><br/><br/><br/>
+
+        <div class="photo"></div>
+
+        <br/><br/><br/>
+
+        <div id="login">
+            <form method="post" action="http://YOUR_DOMAIN_HERE/login/login.php">
+
+                Username: <input type="text" name="username" size="15"/><br/>
+                <br/>Password: <input type="password" name="passwort" size="15"/><br/>
+
+                <br/>
+
+                <div class="readbutton" align="center"><a href="#">Log in</a></div>
+            </form>
+        </div>
+    </header>
+</div>
+<!-- Free template distributed by http://freehtml5templates.com -->
+
+</body>
+
+</html>
