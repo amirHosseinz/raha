@@ -3,7 +3,7 @@
 <head>
     {% load staticfiles %}
     <meta charset="utf-8"/>
-    <title>Principato Italian Cuisine</title>
+    <title>Log in</title>
     <link href="{% static 'main/css/style.css' %}" rel="stylesheet" type="text/css"/>
     <style type="text/css"></style>
 
@@ -30,11 +30,14 @@
 
 <div class="container">
     <header>
-        <div id="logo"><img src="{% static 'main/images/logo.png' %}" alt="your logo here" border="0"
-                            class="imagedropshadow"/></div>
+        <div id="logo">
+            <img src="{% static 'main/images/logo.png' %}" alt="your logo here" border="0" class="imagedropshadow"/>
+        </div>
+
         <h2 align="center">
             Tasket
         </h2>
+
         <br/><br/><br/><br/>
 
         <div class="photo"></div>
@@ -43,21 +46,23 @@
 
         <div id="login">
             <form method="post" action="http://YOUR_DOMAIN_HERE/login/login.php">
-<div dir="rtl">
-                نام کاربری: <input type="text" name="username" size="15"/><br/>
-                <br/>گذرواژه: <input type="password" name="passwort" size="15"/><br/>
 
-                <br/>
+                <div dir="rtl">
 
-                <div class="readbutton" align="center"><a href="#">Log in</a></div>
-            </div>
+                    نام کاربری: <input type="text" name="username" size="15"/><br/><br/>
+                    گذرواژه: <input type="password" name="passwort" size="15"/><br/><br/>
+                    <div class="readbutton" align="center"><a href="#">ورود</a></div>
+
+                </div>
 
             </form>
         </div>
     </header>
 </div>
-<!-- Free template distributed by http://freehtml5templates.com -->
+
 
 </body>
 
 </html>
+
+

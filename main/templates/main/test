@@ -1,0 +1,114 @@
+
+
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+    {% load staticfiles %}
+    <meta charset="utf-8"/>
+    <title>Principato Italian Cuisine</title>
+    <link href="{% static 'main/css/style.css' %}" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+
+    </style>
+
+
+    <!--[if IE]>
+    <script>
+  document.createElement('header');
+  document.createElement('footer');
+  document.createElement('section');
+  document.createElement('nav');
+
+
+    </script>
+    <![endif]-->
+
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+    <header>
+
+
+        <div id="logo"><img src="{% static 'main/images/logo.png' %}" alt="your logo here" border="0"
+                            class="imagedropshadow"/>
+        </div>
+
+
+        <h2 align="center">Tasket</h2>
+
+
+        <br/><br/><br/><br/>
+
+        <div class="photo">
+
+        </div>
+
+        <br/><br/><br/>
+
+        <div id="login>
+                 <form method="post" action="http://YOUR_DOMAIN_HERE/login/login.php">
+                    <div dir="rtl">
+                        نام کاربری: <input type="text" name="username" size="15"/><br/><br/>
+                        گذرواژه: <input type="password" name="passwort" size="15"/><br/><br/>
+                        <div class="readbutton" align="right"><a href="#">ورود</a></div>
+                    </div>
+                 </form>
+        </div>
+ </header>
+
+        <div id="login">
+            <form method="post" action="http://YOUR_DOMAIN_HERE/login/login.php">
+
+                    <table width=300 dir="rtl">
+                        <tr>
+                            <td align="left"><label for="FirstName">نام:</label>
+                            <td><input type="text" name="FistName" id="FirstName" size="20">
+
+
+                        <tr>
+                            <td align="left"><label for="LastName">نام خانوادگي:</label>
+                            <td><input type="text" name="LastName" id="LastName" size="20">
+                        <tr>
+                            <td align="left"><label for="Email">رايانامه:</label>
+                            <td><input type="text" name="Email" id="Email" size="20" dir="ltr">
+                        <tr>
+                            <td align="left"><label for="Username">نام کاربري:</label>
+                            <td><input type="text" name="Username" id="Username" size="20" dir="ltr">
+                        <tr>
+                            <td align="left"><label for="Password">گذرواژه:</label>
+                            <td><input type="password" name="Password" id="Password" size="20" dir="ltr">
+                        <tr>
+                            <td align="left"><label for="confirmPassword">تأييد گذرواژه:</label>
+                            <td><input type="password" name="confirmPassword" id="confirmPassword" size="20" dir="ltr">
+                        <tr>
+
+                                    <div class="readbutton" align="center"><a href="#">ايجاد</a></div>
+                    </table>
+
+
+            </form>
+
+
+        </div>
+-->
+
+
+</div>
+<!-- Free template distributed by http://freehtml5templates.com -->
+
+</body>
+
+</html>
