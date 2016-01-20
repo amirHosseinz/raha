@@ -179,7 +179,7 @@ nav {
 	border-top-color: #ed5e11;
 	background: #ed5e11;
 }
-aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+aside, details, figcaption, figure, footer, header, menu, nav, section {
 	display: block;
 	width: 960px;
 }
@@ -193,7 +193,7 @@ aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 }
 header {
 	width: 960px;
-	height: 500px;
+	height: 530px;
 	background-image: url(../images/header_bg.jpg);
 	background-repeat: repeat-x;
 	-webkit-border-radius:15px;
@@ -394,7 +394,7 @@ li {
 	width: 190px;
 	display: block;
 	margin-left: 0px;
-	list-style-position: outset;
+
 	list-style-image: url(../images/punto_elenco.gif);
 }
 .box_footer {
@@ -426,7 +426,8 @@ a:hover img.imagedropshadow {
 	-webkit-box-shadow: 1px 1px 5px #999;
 	box-shadow: 1px 1px 5px #999;
 	-moz-border-radius: 10px;
-	opacity: 0.6;
+	opacity: 0.6;}
+
 .navbutton a {
 	color: #333333;
 }
@@ -439,7 +440,7 @@ a:hover img.imagedropshadow {
 	margin-top: 15px;
 	margin-right: 15px;
 	margin-bottom: 5px;
-	text-shadow: 1px1px #000000;
+
 }
 .copy {
 	float: left;
