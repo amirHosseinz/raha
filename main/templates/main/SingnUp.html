@@ -45,33 +45,31 @@
 
 
         <div id="login">
-            <form method="post" action="http://YOUR_DOMAIN_HERE/login/login.php">
-
+            {% if result %}
+            {{ result }}
+            {% endif %}
+            <form method="post" action="">
+                {% csrf_token %}
                 <div dir="rtl">
-
                     <label for="FirstName">نام:</label></br>
-                    <input type="text" name="FistName" id="FirstName" size="20"></br></br>
+                    <input type="text" name="fist_name" id="FirstName" size="20"></br></br>
 
                     <label for="LastName">نام خانوادگي:</label></br>
-                    <input type="text" name="LastName" id="LastName" size="20"></br></br>
+                    <input type="text" name="last_name" id="LastName" size="20"></br></br>
 
 
                     <label for="Email">رايانامه:</label></br>
-                    <input type="text" name="Email" id="Email" size="20" dir="ltr"></br></br>
+                    <input type="text" name="email" id="Email" size="20" dir="ltr"></br></br>
 
                     <label for="Username">نام کاربري:</label></br>
-                    <input type="text" name="Username" id="Username" size="20" dir="ltr"></br></br>
+                    <input type="text" name="user_name" id="Username" size="20" dir="ltr"></br></br>
 
                     <label for="Password">گذرواژه:</label></br>
-                    <input type="password" name="Password" id="Password" size="20" dir="ltr"></br></br>
+                    <input type="password" name="password" id="Password" size="20" dir="ltr"></br></br>
 
                     <label for="confirmPassword">تأييد گذرواژه:</label></br>
-                    <input type="password" name="confirmPassword" id="confirmPassword" size="20" dir="ltr"></br></br>
-
-
-
-
-                    <div class="readbutton" align="right"><a href="#">ایجاد</a></div>
+                    <input type="password" name="confirm_password" id="confirmPassword" size="20" dir="ltr"></br></br>
+                    <button class="readbutton" align="right" type="submit">ایجاد</button>
 
                 </div>
 
