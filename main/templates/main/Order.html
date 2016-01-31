@@ -3,9 +3,10 @@
 <head>
     {% load staticfiles %}
     <meta charset="utf-8"/>
-    <title>Principato Italian Cuisine</title>
+    <title>Sign Up</title>
     <link href="{% static 'main/css/style.css' %}" rel="stylesheet" type="text/css"/>
     <style type="text/css"></style>
+
 
     <!--[if IE]>
     <script>
@@ -29,36 +30,49 @@
 
 <div class="container">
     <header>
-
-        <div id="logo"><img src="{% static 'main/images/logo.png' %}" alt="your logo here" border="0"
-                            class="imagedropshadow"/></div>
+        <div id="logo">
+            <img src="{% static 'main/images/logo.png' %}" alt="your logo here" border="0" class="imagedropshadow"/>
+        </div>
 
         <h2 align="center">
-            Tasket
+            سفارش کار جديد
         </h2>
 
         <br/><br/><br/><br/>
 
+        <div class="photo"></div>
 
-        <br/><br/><br/>
+
 
         <div id="login">
             <form method="post" action="http://YOUR_DOMAIN_HERE/login/login.php">
-                <br/>Title: <input type="text" name="username" size="15"/><br/>
-                <br/>Dead line: <input type="text" name="username" size="20"/><br/>
 
-                <br/>Description: <input type="text" name="username"
-                                         style="width:213px;height:113px;line-height:113px"/>
-                <br/>
-                <br/>
+                <div dir="rtl">
 
-                <div class="readbutton" align="center"><a href="#">Create</a></div>
+                    <label for="Title">عنوان سفارش:</label></br>
+                    <input type="text" name="FistName" id="Title" size="20"></br></br>
+
+                    <label for="Title">حداکقر زمان مورد انتظار:</label></br>
+                    <input type="text" name="FistName" id="Title" size="20"></br></br>
+
+
+					<br/>توضيحات لازم: <input type="text" name="username"
+                                    style="width:213px;height:113px;line-height:113px"/>
+
+					
+					
+                    <div class="readbutton" align="right"><a href="#">ایجاد</a></div>
+
+                </div>
+
             </form>
         </div>
     </header>
 </div>
-<!-- Free template distributed by http://freehtml5templates.com -->
+
 
 </body>
 
 </html>
+
+
