@@ -70,17 +70,18 @@
         </div>
 
 
-         <div id="login">
+         <div id="login"   dir="rtl">
             {% if result %}
             {{ result }}
             {% endif %}
             <form method="post" action="">
                 {% csrf_token %}
-                <div dir="rtl">
+                <div >
+
+                    <div class="readbutton"  dir="rtl"><a href="/main/AddSkill">افزودن مهارت </a></div>
+                    <div class="readbutton"  dir="rtl"><a href="/main/EditProfile">ویرایش حساب کاربری</a></div>
 
 
-                    <button class="readbutton" align="right" type="submit">افزودن مهارت </button>
-                    <button class="readbutton" align="right" type="submit">ویرایش حساب کاربری</button>
 
 
                 </div>
