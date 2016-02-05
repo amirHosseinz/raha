@@ -11,8 +11,21 @@ def index(request):
 
 
 def login(request):
+    context = dict()
+    if request.method == 'POST':
+        user_name = request.POST.get('user_name')
+        password = request.POST.get('password')
+        try:
+            obj = Member.objects.get(user_name=user_name, password=password)
+        except:
+            obj = None
+        if obj is not None:
+            pass
+        else:
+            context['not_match'] = True
     template = loader.get_template('main/Login.html')
-    return HttpResponse(template.render(request))
+    context['template'] = template
+    return HttpResponse(template.render(context, request))
 
 
 def order(request):
@@ -42,7 +55,7 @@ def sign_up(request):
         if password != conf_password:
             result = 'password and confirm does not match!'
         else:
-            member = Member(user_name=user_name, first_name=first_name, last_name=last_name, email=email, credit=0, debit=0, skill='developer', password=password, is_verified=False, join_date=timezone.now())
+            member = Member(user_name=user_name, first_name=first_name, last_name=last_name, email=email, credit=0, debit=0, skill='developer', password=password, is_verified=True, join_date=timezone.now())
             member.save()
             result = 'account ' + user_name + ' successfully created.'
     else:

@@ -1,19 +1,14 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
-class Member(models.Model):
-    user_name = models.CharField(max_length=200, primary_key=True)
-    first_name = models.CharField(max_length=100)
-    last_name = models.CharField(max_length=100)
-    email = models.EmailField()
+class Member(User):
     credit = models.IntegerField()
     debit = models.IntegerField()
     # Skill to be done
     skill = models.CharField(max_length=100)
-    password = models.CharField(max_length=50)
-    # pic = models.ImageField(upload_to='photos')
+    pic = models.ImageField(upload_to='photos', default=None)
     is_verified = models.BooleanField(default=False)
-    join_date = models.DateField('date joined')
 
     def __str__(self):
         return self.user_name
@@ -21,7 +16,7 @@ class Member(models.Model):
 
 class Task(models.Model):
     id = models.AutoField(primary_key=True)
-    title = models.CharField(max_length=20)
+    title = models.CharField(max_length=20, default=None)
     description = models.TextField()
     owner = models.ForeignKey(Member, on_delete=models.CASCADE)
 
@@ -48,7 +43,7 @@ class Remove(models.Model):
 class Bank(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
-    # logo = models.ImageField('photos')
+    logo = models.ImageField('photos', default=None)
     gate = models.URLField()
 
 

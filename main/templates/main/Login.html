@@ -45,16 +45,18 @@
 
 
         <div id="login">
-            <form method="post" action="http://YOUR_DOMAIN_HERE/login/login.php">
-
+            <form method="post" action="">
+                {% csrf_token %}
+                {% if not_match %}
+                نام کاربری یا رمز عبور اشتباه می‌باشد!
+                {% endif %}
                 <div dir="rtl">
-
                     <label for="Username">نام کاربري:</label></br>
-                    <input type="text" name="Username" id="Username" size="20" dir="ltr"></br></br>
+                    <input type="text" name="user_name" id="Username" size="20" dir="ltr"></br></br>
 
                     <label for="Password">گذرواژه:</label></br>
-                    <input type="password" name="Password" id="Password" size="20" dir="ltr"></br></br>
-                    <div class="readbutton" align="center"><a href="#">ورود</a></div>
+                    <input type="password" name="password" id="Password" size="20" dir="ltr"></br></br>
+                    <button class="readbutton" align="center" type="submit">ورود</button>
 
                 </div>
 
