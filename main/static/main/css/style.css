@@ -193,7 +193,7 @@ aside, details, figcaption, figure, footer, header, menu, nav, section {
 }
 header {
 	width: 960px;
-	height: 530px;
+	height: 800px;
 	background-image: url(../images/header_bg.jpg);
 	background-repeat: repeat-x;
 	-webkit-border-radius:15px;

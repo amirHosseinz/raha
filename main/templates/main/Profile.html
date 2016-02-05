@@ -43,6 +43,19 @@
 
         <br/><br/><br/><br/>
 
+
+        <nav>
+                    <div class="navbutton"><a href="/main">خانه</a></div>
+                    <div class="navbutton"><a href="sign_up">ثبت نام</a></div>
+                    <div class="navbutton"><a href="sign_up">ورود</a></div>
+                    <div class="navbutton"><a href="#">درباره ما</a></div>
+                    <div class="navbutton"><a href="contact">تماس با ما</a></div>
+        </nav>
+
+
+
+        <br/><br/>
+
         <div class="prophoto"></div>
 
         <div dir="rtl">
@@ -54,6 +67,26 @@
                 تجارب: <br/><br/>
                 کار فعلی: <br/><br/>
             </p>
+        </div>
+
+
+         <div id="login"   dir="rtl">
+            {% if result %}
+            {{ result }}
+            {% endif %}
+            <form method="post" action="">
+                {% csrf_token %}
+                <div >
+
+                    <div class="readbutton"  dir="rtl"><a href="/main/AddSkill">افزودن مهارت </a></div>
+                    <div class="readbutton"  dir="rtl"><a href="/main/EditProfile">ویرایش حساب کاربری</a></div>
+
+
+
+
+                </div>
+
+            </form>
         </div>
 
 

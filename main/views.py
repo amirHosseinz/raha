@@ -77,3 +77,15 @@ def contact(request):
     template = loader.get_template('main/Contact.html')
     return HttpResponse(template.render(request))
 
+
+def AddSkill(request):
+    template = loader.get_template('main/AddSkill.html')
+    return HttpResponse(template.render(request))
+
+
+def EditProfile(request):
+    template = loader.get_template('main/EditProfile.html')
+    return HttpResponse(template.render(request))
+
+
+
