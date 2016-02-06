@@ -88,4 +88,8 @@ def EditProfile(request):
     return HttpResponse(template.render(request))
 
 
+def JobFind(request):
+    template = loader.get_template('main/JobFind.html')
+    return HttpResponse(template.render(request))
+
 

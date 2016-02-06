@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load staticfiles %}
+    <meta charset="utf-8"/>
+    <title>JobFind</title>
+    <link href="{% static 'main/css/style.css' %}" rel="stylesheet" type="text/css"/>
+    <style type="text/css"></style>
+
+
+    <!--[if IE]>
+    <script>
+  document.createElement('header');
+  document.createElement('footer');
+  document.createElement('section');
+  document.createElement('nav');
+
+
+    </script>
+    <![endif]-->
+
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div class="container">
+    <header>
+        <div id="logo">
+            <img src="{% static 'main/images/logo.png' %}" alt="your logo here" border="0" class="imagedropshadow"/>
+        </div>
+
+        <h2 align="center">
+            کاردونی
+        </h2>
+
+        <br/><br/><br/><br/>
+
+
+
+
+
+        <div id="login"  dir="rtl">
+            {% if result %}
+            {{ result }}
+            {% endif %}
+            <form method="post" action="">
+                {% csrf_token %}
+                <div dir="rtl">
+                    <label for="FirstName">مهارت :</label></br>
+                    <input type="text" name="fist_name" id="FirstName" size="20"></br></br>
+
+
+                    <button class="readbutton" align="right" type="submit">جستجو</button>
+
+                </div>
+
+            </form>
+        </div>
+
+
+    </header>
+</div>
+
+
+</body>
+
+</html>
+
+

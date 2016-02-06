@@ -11,5 +11,6 @@ urlpatterns = [
     url(r'^contact/', views.contact, name='contact'),
     url(r'^AddSkill/', views.AddSkill, name='AddSkill'),
     url(r'^EditProfile/', views.EditProfile, name='EditProfile'),
+    url(r'^JobFind/', views.JobFind, name='JobFind'),
 
 ]
