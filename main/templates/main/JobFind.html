@@ -30,7 +30,7 @@
 
 <div class="container">
     <header>
-        <div id="logo">
+        <div id="logo" align="right">
             <img src="{% static 'main/images/logo.png' %}" alt="your logo here" border="0" class="imagedropshadow"/>
         </div>
 
@@ -41,10 +41,10 @@
         <br/><br/><br/><br/>
 
 
+        <div class="photo"></div>
 
 
-
-        <div id="login"  dir="rtl">
+        <div id="login"  >
             {% if result %}
             {{ result }}
             {% endif %}
@@ -54,6 +54,15 @@
                     <label for="FirstName">مهارت :</label></br>
                     <input type="text" name="fist_name" id="FirstName" size="20"></br></br>
 
+
+                    <label for="FirstName">مموقعیت مکانی:</label></br>
+                    <input type="text" name="fist_name" id="FirstName" size="20"></br></br>
+
+                    <label for="FirstName">حداقل سابقه:</label></br>
+                    <input type="text" name="fist_name" id="FirstName" size="20"></br></br>
+
+                    <label for="FirstName">نام نام خانوادگی:</label></br>
+                    <input type="text" name="fist_name" id="FirstName" size="20"></br></br>
 
                     <button class="readbutton" align="right" type="submit">جستجو</button>
 
